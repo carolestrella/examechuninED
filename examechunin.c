@@ -355,26 +355,26 @@ void resultado(t_node* root, t_list* list, Ninja* vencedor, Ninja* perdedor, int
 
 	if(derrotado == 0){
 		printf("██╗   ██╗██╗████████╗ ██████╗ ██████╗ ██╗ █████╗\n");
-        printf("██║   ██║██║╚══██╔══╝██╔═══██╗██╔══██╗██║██╔══██╗\n");
-        printf("██║   ██║██║   ██║   ██║   ██║██████╔╝██║███████║\n");
-        printf("╚██╗ ██╔╝██║   ██║   ██║   ██║██╔══██╗██║██╔══██║\n");
-        printf(" ╚████╔╝ ██║   ██║   ╚██████╔╝██║  ██║██║██║  ██║\n");
-        printf("  ╚═══╝  ╚═╝   ╚═╝    ╚═════╝ ╚═╝  ╚═╝╚═╝╚═╝  ╚═╝\n\n");
+        	printf("██║   ██║██║╚══██╔══╝██╔═══██╗██╔══██╗██║██╔══██╗\n");
+        	printf("██║   ██║██║   ██║   ██║   ██║██████╔╝██║███████║\n");
+        	printf("╚██╗ ██╔╝██║   ██║   ██║   ██║██╔══██╗██║██╔══██║\n");
+        	printf(" ╚████╔╝ ██║   ██║   ╚██████╔╝██║  ██║██║██║  ██║\n");
+        	printf("  ╚═══╝  ╚═╝   ╚═╝    ╚═════╝ ╚═╝  ╚═╝╚═╝╚═╝  ╚═╝\n\n");
 
-        imprimebatalha(atributo, vencedor, perdedor, 1);
-        printf("\n%s ganhou a batalha\n", vencedor->nome);
+        	imprimebatalha(atributo, vencedor, perdedor, 1);
+        	printf("\n%s ganhou a batalha\n", vencedor->nome);
 	}
 
 	else if(derrotado == 1){
 		printf("██████╗ ███████╗██████╗ ██████╗  ██████╗ ████████╗ █████╗ \n");
-        printf("██╔══██╗██╔════╝██╔══██╗██╔══██╗██╔═══██╗╚══██╔══╝██╔══██╗\n");
-        printf("██║  ██║█████╗  ██████╔╝██████╔╝██║   ██║   ██║   ███████║\n");
-        printf("██║  ██║██╔══╝  ██╔══██╗██╔══██╗██║   ██║   ██║   ██╔══██║\n");
-        printf("██████╔╝███████╗██║  ██║██║  ██║╚██████╔╝   ██║   ██║  ██║\n");
-        printf("╚═════╝ ╚══════╝╚═╝  ╚═╝╚═╝  ╚═╝ ╚═════╝    ╚═╝   ╚═╝  ╚═╝\n\n");
+        	printf("██╔══██╗██╔════╝██╔══██╗██╔══██╗██╔═══██╗╚══██╔══╝██╔══██╗\n");
+        	printf("██║  ██║█████╗  ██████╔╝██████╔╝██║   ██║   ██║   ███████║\n");
+        	printf("██║  ██║██╔══╝  ██╔══██╗██╔══██╗██║   ██║   ██║   ██╔══██║\n");
+        	printf("██████╔╝███████╗██║  ██║██║  ██║╚██████╔╝   ██║   ██║  ██║\n");
+        	printf("╚═════╝ ╚══════╝╚═╝  ╚═╝╚═╝  ╚═╝ ╚═════╝    ╚═╝   ╚═╝  ╚═╝\n\n");
 
-        imprimebatalha(atributo, vencedor, perdedor, 0);
-        printf("\n%s ganhou a batalha\n", vencedor->nome);
+        	imprimebatalha(atributo, vencedor, perdedor, 0);
+        	printf("\n%s ganhou a batalha\n", vencedor->nome);
 	}
 
 
@@ -554,13 +554,13 @@ void displaypersonagem(t_node* raiz, Ninja* personagem, Ninja* adversario, int e
 		printf("SUPREMACIA ELEMENTAL: %s > %s\n", personagem->elemento, adversario->elemento);
 		printf("Todos os atributos foram multiplicados por x1.2\n\n");
 		x = 1.2;
-        *flag = 1;
+        	*flag = 1;
 	} 
 	else if(supremaciaelemental(personagem, adversario) == -1){ //se tem inferioridade elemental multiplica atributos por 0.8
 		printf("INFERIORIDADE ELEMENTAL: %s < %s\n", personagem->elemento, adversario->elemento);
 		printf("Todos os atributos foram multiplicados por x0.8\n\n");
 		x = 0.8;
-        *flag = -1;
+        	*flag = -1;
 	}
 	
 	if(atributo == 1){
